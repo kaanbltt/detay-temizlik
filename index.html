@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detay Temizlik | Profesyonel Hizmet</title>
+    <title>Detay Temizlik | Beyoğlu & İstanbul Profesyonel Temizlik</title>
     <style>
-        /* Arka planı açık mavi yapmak için burayı ekledim */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #e3f2fd; /* Açık Mavi Renk */
+            background-color: #e3f2fd;
             margin: 0;
             padding: 0;
             color: #333;
+            padding-bottom: 100px;
         }
         header {
             background-color: #0288d1;
@@ -27,42 +27,83 @@
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-        h1 { margin: 0; font-size: 2.5em; }
-        .hizmetler { margin-top: 20px; }
-        .buton {
+        h1 { margin: 0; font-size: 2.2em; }
+        .bolge { 
+            background: #01579b; 
+            display: inline-block; 
+            padding: 8px 20px; 
+            border-radius: 25px; 
+            margin-top: 15px; 
+            font-weight: bold;
+        }
+        .hizmetler p { 
+            border-bottom: 1px solid #eee; 
+            padding: 12px 0; 
+            margin: 0;
+        }
+        .hizmetler p:last-child { border: none; }
+        .ara-buton {
             display: block;
-            width: 250px;
+            width: 280px;
             margin: 30px auto;
-            padding: 15px;
-            background-color: #2e7d32;
+            padding: 18px;
+            background-color: #0288d1;
             color: white;
             text-decoration: none;
             text-align: center;
             border-radius: 50px;
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1.1em;
+            transition: 0.3s;
         }
-        .buton:hover { background-color: #1b5e20; }
+        .ara-buton:hover { background-color: #01579b; }
+        
+        /* WhatsApp Sabit Buton */
+        .wp-sabit {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+        .wp-sabit:hover { transform: scale(1.05); }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Detay Temizlik</h1>
-    <p>Pırıl pırıl mekanlar, mutlu yüzler!</p>
+    <div class="bolge">📍 Beyoğlu / İstanbul Geneli Hizmet</div>
+    <p>Profesyonel Ekip, Hijyenik Sonuçlar</p>
 </header>
 
 <div class="container">
-    <h2>Hizmetlerimiz</h2>
+    <h2>Neler Yapıyoruz?</h2>
     <div class="hizmetler">
-        <p>✅ Ev ve Ofis Temizliği</p>
-        <p>✅ İnşaat Sonrası Detaylı Temizlik</p>
-        <p>✅ Koltuk ve Halı Yıkama</p>
-        <p>✅ Cam ve Dış Cephe Temizliği</p>
+        <p>🧼 <b>Ev Temizliği:</b> Detaylı oda, mutfak ve banyo hijyeni.</p>
+        <p>🏢 <b>Ofis Temizliği:</b> Periyodik veya tek seferlik çözümler.</p>
+        <p>🛠️ <b>İnşaat Sonrası:</b> Zorlu kirlerin ve tozların temizlenmesi.</p>
+        <p>✨ <b>Cam ve Dış Cephe:</b> Parlayan camlar, temiz binalar.</p>
     </div>
+    
+    <p style="text-align:center; color:#555; margin-top: 25px;">
+        Beyoğlu başta olmak üzere tüm İstanbul genelinde hizmetinizdeyiz.
+    </p>
 
-    <a href="tel:+905000000000" class="buton">📞 Hemen Arayın</a>
+    <a href="tel:+905336345378" class="ara-buton">📞 Tıkla Ara: 0533 634 53 78</a>
 </div>
+
+<a href="https://wa.me/905336345378" class="wp-sabit" target="_blank">
+    💬 WhatsApp'tan Yazın
+</a>
 
 </body>
 </html>
